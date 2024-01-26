@@ -14,7 +14,7 @@ document.getElementById('myForm').addEventListener('submit',function(e){
     else if(mail.trim() === "" || !mail.includes('@')){
         document.getElementById("mailPara").textContent= "*Enter a valid email";
     }
-    else if(pass.length >= 8){
+    else if(pass.length >= 9){
         document.getElementById("passPara").textContent = "*Password length should not be greater then 8 characters"
     }
     else if(pass.length < 4){
@@ -37,5 +37,7 @@ document.getElementById('myForm').addEventListener('clear',function(e){
     pass.value='';
     const cpass = document.getElementById("cpass");
     cpass.value='';
+    const para = document.getElementById("para");
+    para.textContent = "";
     e.preventDefault();
 })
