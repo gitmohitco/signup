@@ -38,6 +38,14 @@ document.getElementById('myForm').addEventListener('clear',function(e){
     const cpass = document.getElementById("cpass");
     cpass.value='';
     const para = document.getElementById("para");
-    para.textContent = "";
+    para.textContent="";
+    const mailPara = document.getElementById("mailPara");
+    mailPara.textContent="";
+    const passPara = document.getElementById("passPara");
+    passPara.textContent = "";
+    const cpassPara = document.getElementById("cpassPara");
+    cpassPara.textContent="";
+    const log = document.querySelector(".log");
+    log.textContent="";
     e.preventDefault();
 })
