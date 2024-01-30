@@ -74,6 +74,7 @@ function clearItems(){
 }
 
 document.getElementById('myForm').addEventListener('clear',function(e){
+    e.preventDefault();
     name.value="";
     mail.value="";
     pass.value='';
@@ -88,5 +89,4 @@ document.getElementById('myForm').addEventListener('clear',function(e){
     cpassPara.textContent="";
     const log = document.querySelector(".log");
     log.textContent="";
-    e.preventDefault();
 })
