@@ -1,6 +1,6 @@
 const lmail = document.getElementById('mail')
 const lpass = document.getElementById('pass');
-document.getElementById('login').addEventListener('submit', login);
+document.getElementById('myForm').addEventListener('submit', login);
 function login(e){
     let values = JSON.parse(localStorage.getItem("formData"))
     
