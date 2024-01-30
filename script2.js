@@ -5,7 +5,7 @@ function login(e){
     let values = JSON.parse(localStorage.getItem("formData"))
     
     if((lmail.value == values.mail)&&(lpass.value == values.pass)){
-        window.location = "https://gitmohitco.github.io/formshow/";
+        window.location.href = "https://gitmohitco.github.io/formshow/";
     }
     else{
         alert("Wrong email or password");
